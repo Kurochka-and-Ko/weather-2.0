@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63defcc7a511c45dd90a023236886523 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63defcc7a511c45dd90a023236886523" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63defcc7a511c45dd90a023236886523 = L.map(
+                "map_63defcc7a511c45dd90a023236886523",
+                {
+                    center: [55.752, 37.619],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_145ed9a13655a836605eadb8266d9d43 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_145ed9a13655a836605eadb8266d9d43.addTo(map_63defcc7a511c45dd90a023236886523);
+        
+    
+            var marker_c22aa34137cbedbe40318cbeb39d3c52 = L.marker(
+                [55.752, 37.619],
+                {
+}
+            ).addTo(map_63defcc7a511c45dd90a023236886523);
+        
+    
+            var icon_9601cc6874b9729907f985050f0713f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c22aa34137cbedbe40318cbeb39d3c52.setIcon(icon_9601cc6874b9729907f985050f0713f7);
+        
+    
+        var popup_4bcaa7b7242705eb15ef4f17101f4fa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b413749d4ac4bbaf7d1b865f09f42a1c = $(`<div id="html_b413749d4ac4bbaf7d1b865f09f42a1c" style="width: 100.0%; height: 100.0%;">Москва: Макс. -2.4 °C, Мин. -5.8 °C</div>`)[0];
+                popup_4bcaa7b7242705eb15ef4f17101f4fa9.setContent(html_b413749d4ac4bbaf7d1b865f09f42a1c);
+            
+        
+
+        marker_c22aa34137cbedbe40318cbeb39d3c52.bindPopup(popup_4bcaa7b7242705eb15ef4f17101f4fa9)
+        ;
+
+        
+    
+    
+            var marker_ce67af54830cbd95cdcb179cb9555eac = L.marker(
+                [59.939, 30.315],
+                {
+}
+            ).addTo(map_63defcc7a511c45dd90a023236886523);
+        
+    
+            var icon_ff13f10060bb50a8abf509954a4810fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce67af54830cbd95cdcb179cb9555eac.setIcon(icon_ff13f10060bb50a8abf509954a4810fd);
+        
+    
+        var popup_c81ceb9b667f512879ce5387b80ec3bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6d1314f18b2df9fb58cc60c6828c6a5 = $(`<div id="html_d6d1314f18b2df9fb58cc60c6828c6a5" style="width: 100.0%; height: 100.0%;">Санкт-Петербург: Макс. 2.8 °C, Мин. 1.1 °C</div>`)[0];
+                popup_c81ceb9b667f512879ce5387b80ec3bc.setContent(html_d6d1314f18b2df9fb58cc60c6828c6a5);
+            
+        
+
+        marker_ce67af54830cbd95cdcb179cb9555eac.bindPopup(popup_c81ceb9b667f512879ce5387b80ec3bc)
+        ;
+
+        
+    
+    
+            var marker_58a764cec0c12531095b9c17716bc1a7 = L.marker(
+                [64.543, 40.537],
+                {
+}
+            ).addTo(map_63defcc7a511c45dd90a023236886523);
+        
+    
+            var icon_98c07ec8761d3c167a58bfdb485a14d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58a764cec0c12531095b9c17716bc1a7.setIcon(icon_98c07ec8761d3c167a58bfdb485a14d7);
+        
+    
+        var popup_a0504698ec418d2672c30dff1d749bfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94ad6f3c5a1f41aeec311ebdc6f3c843 = $(`<div id="html_94ad6f3c5a1f41aeec311ebdc6f3c843" style="width: 100.0%; height: 100.0%;">Архангельск: Макс. -4.1 °C, Мин. -10.6 °C</div>`)[0];
+                popup_a0504698ec418d2672c30dff1d749bfe.setContent(html_94ad6f3c5a1f41aeec311ebdc6f3c843);
+            
+        
+
+        marker_58a764cec0c12531095b9c17716bc1a7.bindPopup(popup_a0504698ec418d2672c30dff1d749bfe)
+        ;
+
+        
+    
+    
+            var poly_line_caaa69222becf153bd84c1e08832f223 = L.polyline(
+                [[55.752, 37.619], [59.939, 30.315], [64.543, 40.537]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_63defcc7a511c45dd90a023236886523);
+        
+</script>
+</html>

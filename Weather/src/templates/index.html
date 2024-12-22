@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодный маршрут</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Введите маршрут</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST" action="/results">
+    <label for="start_city">Начальный город:</label>
+    <input type="text" name="start_city" id="start_city" required>
+    <br>
+
+    <label for="end_city">Конечный город:</label>
+    <input type="text" name="end_city" id="end_city" required>
+    <br>
+
+    <label for="stop_city">Промежуточные точки:</label>
+    <div id="stops">
+        <input type="text" name="stop_city[]" placeholder="Промежуточный город">
+    </div>
+    <button type="button" onclick="addStop()">Добавить точку</button>
+    <br>
+
+    <label for="days">Дни прогноза:</label>
+    <select name="days" id="days">
+        <option value="1">1 день</option>
+        <option value="5">5 дней</option>
+    </select>
+    <br>
+
+    <button type="submit">Получить прогноз</button>
+</form>
+
+<script>
+    function addStop() {
+        const stops = document.getElementById('stops');
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'stop_city[]';
+        input.placeholder = 'Промежуточный город';
+        stops.appendChild(input);
+    }
+</script>
+
+
+
+</body>
+</html>
+
